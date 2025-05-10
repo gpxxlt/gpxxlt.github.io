@@ -12,3 +12,10 @@
     margin-bottom: 10px;
     margin-left: 8px;
 }
+
+/* Defines the background image, credits: https://heropatterns.com/ */
+/* Also can checkout different color gradients: https://uigradients.com/#Sunset */
+body {
+    background-image: url('architect.svg');
+    background-repeat: repeat;
+}

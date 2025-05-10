@@ -6,7 +6,7 @@ export const introSectionData = [
     },
     {
         id: 1,
-        title: "Frontend Engineer",
+        title: "Reader",
         body: "A description."
     },
     {

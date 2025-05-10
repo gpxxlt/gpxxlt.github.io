@@ -1,11 +1,20 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Image from 'next/image';
+import Link from "next/link";
+
 import { projectData } from './projects-data.js';
 import "./project.css"
 import "../../fonts/fonts.css"
-import Image from 'next/image';
+
+// Icon assets from https://react-icons.github.io/react-icons/
+import { FaGithubSquare, FaLaptop } from "react-icons/fa"
+
 
 function ProjectItem(prop) {
+
+    // TODO: set states by hovering the tags
+
     return (
         // Card component has a padding of 6px
         <Card className="project-item">
@@ -30,7 +39,6 @@ function ProjectItem(prop) {
                     <CardHeader>
                         <CardTitle className="project-item-title-font">
                             {prop.title}
-                            {/* TODO: Add icons */}
                         </CardTitle>
                         <div className="flex flex-row gap-2 -ml-0.5">
                             {prop.tags.map(tag => (
@@ -38,6 +46,15 @@ function ProjectItem(prop) {
                                     {tag.name}
                                 </Button>
                             ))}
+                            {/* Conditionally display icons for redirection */}
+                            {prop.github ?
+                                <Link href={prop.github_url}>
+                                    <FaGithubSquare size={24} />
+                                </Link> : null}
+                            {prop.demo ?
+                                <Link href={prop.demo_url}>
+                                    <FaLaptop size={24} />
+                                </Link> : null}
                         </div>
                     </CardHeader>
 
