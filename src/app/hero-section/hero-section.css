@@ -1,0 +1,37 @@
+.hero-section {
+    display: flex;
+}
+
+.hero-section-text {
+    width: 60%;
+    height: auto;
+    position: relative;
+    border: 2px solid #000;
+}
+
+.hero-section-avatar {
+    width: 20%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+}
+
+.hero-section-avatar-image {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 50%;  /* This creates the circle */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #000;
+}
+
+.hero-section h1 {
+    font-weight: normal;
+    font-size: 40px;
+}

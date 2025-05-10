@@ -1,32 +1,54 @@
 export const projectData = [
     {
         id: 0,
-        title: 'Project 1',
+        title: 'Google Maps Integration',
         brief: 'One liner to describe this project',
         description: 'In-depth description for project 1',
+        image: '/proj-images/proj0.jpeg',
         tags: [
-            'maps', 'real-time', 'collaboration'
+            {
+                id: 0,
+                name: '#maps',
+                description: 'This uses some sort of API',
+            },
+            {
+                id: 1,
+                name: '#real-time',
+                description: 'This is a real time application',
+            },
+            {
+                id: 2,
+                name: '#collaboration',
+                description: 'This is a collaboration project',
+            }
         ],
-        img: '/path/to/image.jpg'
+        demo_url: '',
+        github_url: '',
     },
     {
         id: 1,
         title: 'Project 2',
         brief: 'One liner to describe this project',
-        description: 'In-depth description for project 2',
+        description: 'In-depth description for project 1',
+        image: '/proj-images/proj0.jpeg',
         tags: [
-            'maps', 'real-time', 'collaboration'
+            {
+                id: 0,
+                name: '#maps',
+                description: 'This uses some sort of API',
+            },
+            {
+                id: 1,
+                name: '#real-time',
+                description: 'This is a real time application',
+            },
+            {
+                id: 2,
+                name: '#collaboration',
+                description: 'This is a collaboration project',
+            }
         ],
-        img: '/path/to/image.jpg'
-    },
-    {
-        id: 2,
-        title: 'Project 3',
-        brief: 'One liner to describe this project',
-        description: 'In-depth description for project 3',
-        tags: [
-            'maps', 'real-time', 'collaboration'
-        ],
-        img: '/path/to/image.jpg'
+        demo_url: '',
+        github_url: '',
     },
 ]

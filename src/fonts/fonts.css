@@ -1,0 +1,33 @@
+/* Font source: https://online-fonts.com/fonts/commissioner/download */
+
+/* Regular */
+@font-face {
+    font-family: 'Commissioner';
+    src: url('Commissioner/Commissioner.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'Commissioner';
+    src: url('Commissioner/Commissioner.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Light */
+@font-face {
+    font-family: 'Commissioner';
+    src: url('Commissioner/Commissioner.ttf') format('ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Bold Italic */
+@font-face {
+    font-family: 'Commissioner';
+    src: url('Commissioner/Commissioner.ttf') format('ttf');
+    font-weight: bold;
+    font-style: italic;
+}

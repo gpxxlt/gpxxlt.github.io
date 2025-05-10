@@ -1,0 +1,130 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/app/projects/project.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.project-item {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 3.33;
+}
+
+.project-item-image-style {
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.20);
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.project-item-title-font {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.project-item-description-font {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/fonts/fonts.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************/
+/* Font source: https://online-fonts.com/fonts/commissioner/download */
+
+/* Regular */
+@font-face {
+    font-family: 'Commissioner';
+    src: url(/_next/static/media/Commissioner.534557e9.ttf) format('ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'Commissioner';
+    src: url(/_next/static/media/Commissioner.534557e9.ttf) format('ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Light */
+@font-face {
+    font-family: 'Commissioner';
+    src: url(/_next/static/media/Commissioner.534557e9.ttf) format('ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Bold Italic */
+@font-face {
+    font-family: 'Commissioner';
+    src: url(/_next/static/media/Commissioner.534557e9.ttf) format('ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/app/hero-section/hero-section.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.hero-section {
+    display: flex;
+}
+
+.hero-section-text {
+    width: 60%;
+    height: auto;
+    position: relative;
+    border: 2px solid #000;
+}
+
+.hero-section-avatar {
+    width: 20%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border: 2px solid #000;
+}
+
+.hero-section-avatar-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;  /* This creates the circle */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #000;
+    object-fit: contain;
+}
+
+.hero-section h1 {
+    font-weight: normal;
+    font-size: 40px;
+}
+
+/*!**************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/app/page.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************/
+.section {
+    background: #fff;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    /* Temporary, remove when done */
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    font-weight: normal;
+    font-size: 30px;
+    margin: 10px;
+}
+

@@ -1,0 +1,32 @@
+.project-item {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 3.33;
+    margin-bottom: 20pt;
+}
+
+.project-item-image-style {
+    object-fit: cover;
+    border-radius: 4px;
+    background: #FFF;
+    /*border: 4px solid rgba(0, 0, 0, 0.20);*/
+    /*box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);*/
+}
+
+.project-item-title-font {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.project-item-description-font {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
