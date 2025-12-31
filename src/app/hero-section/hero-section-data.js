@@ -1,9 +1,11 @@
 export const heroSectionData = {
-    title: 'Hi, This is Yuepeng',
+    title: "Welcome to My Digital Garden",
     brief: `I am a rising senior at Carnegie Mellon University majoring in Computer Science with a minor in Statistics. 
             Proficient in Python, C/C++, C#, and R. 
             Experienced in game development, statistical analysis, and web development. 
             Known for adaptability and problem-solving skills. 
             Seeking an internship in Information Technology.`,
-    avatar: '/proj-images/avatar.png',
+    // avatar: '/proj-images/avatar.png',
+    linkedIn: "https://www.linkedin.com/in/gyp15213/",
+    github: "https://github.com/gpxxlt"
 }

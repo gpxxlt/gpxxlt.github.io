@@ -1,0 +1,23 @@
+.sidebar {
+    position: sticky;
+    top: 8rem;
+    border: 1px black solid;
+    border-radius: 0.5rem;
+    /*  Defines a dynamic spacing between border and actual content  */
+    padding: 1rem;
+}
+
+.sidebar-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sidebar h1 {
+
+}
+
+.sidebar p {
+
+}
+

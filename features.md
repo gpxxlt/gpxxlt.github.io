@@ -3,7 +3,9 @@
 - [ ] Hero section 
     - [ ] [Content] Prepare a brief introduction
     - [ ] [Content] Get an animated avatar
-    - [ ] [Content] Adding content info, github, linkedin, (link to) resume
+    - [x] [Content] Adding content info, github, linkedin, (link to) resume
+    - [ ] Adjust padding of the text
+    - [ ] Adjust the style of the two buttons
 - [ ] Projects section
     - [ ] [Interactivity] Advanced tagging features - upon hovering each tags, a more detailed description will cover the project card
     - [ ] [Content] Prepare 3-4 projects that can be listed with demos and urls

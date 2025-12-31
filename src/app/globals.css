@@ -143,3 +143,120 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Add a concrete-textured background */
+/*.custom-body {*/
+/*    background-image: url("../../public/proj-images/stone-wall-texture.jpg");*/
+/*    background-position: top left;*/
+/*    background-attachment: fixed;*/
+/*    background-size: cover;*/
+/*}*/
+
+/*.custom-body::after {*/
+/*    content: '';*/
+/*    position: fixed;*/
+/*    inset: 0;*/
+/*    background: rgba(0, 0, 0, 0.1);  !* Very subtle darkening *!*/
+/*    pointer-events: none;*/
+/*}*/
+
+
+/*https://hype4.academy/tools/glassmorphism-generator*/
+.project-card {
+    /*width: 240px;*/
+    height: 360px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:
+            0 8px 32px rgba(0, 0, 0, 0.1),
+            inset 0 1px 0 rgba(255, 255, 255, 0.5),
+            inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+            inset 0 0 20px 10px rgba(255, 255, 255, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.8),
+            transparent
+    );
+}
+
+.project-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.8),
+            transparent,
+            rgba(255, 255, 255, 0.3)
+    );
+}
+
+/* https://patterncraft.fun/ */
+.geometric-background {
+    background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 5px, rgba(75, 85, 99, 0.06) 5px, rgba(75, 85, 99, 0.06) 6px, transparent 6px, transparent 15px),
+        repeating-linear-gradient(90deg, transparent, transparent 5px, rgba(75, 85, 99, 0.06) 5px, rgba(75, 85, 99, 0.06) 6px, transparent 6px, transparent 15px),
+        repeating-linear-gradient(0deg, transparent, transparent 10px, rgba(107, 114, 128, 0.04) 10px, rgba(107, 114, 128, 0.04) 11px, transparent 11px, transparent 30px),
+        repeating-linear-gradient(90deg, transparent, transparent 10px, rgba(107, 114, 128, 0.04) 10px, rgba(107, 114, 128, 0.04) 11px, transparent 11px, transparent 30px)
+}
+
+
+.image-container {
+    width: 100%;;
+    /*height: auto;*/
+    aspect-ratio: 16/9;
+    border-radius: 2px;
+    box-shadow:
+        rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+/* This whole thing is best when we have a fixed height for each project */
+/*https://www.youtube.com/watch?v=8XGhiyjaXYY*/
+.sticky-note {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background: whitesmoke;
+    width: 50%;
+}
+
+.sticky-note::before {
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    left: 15px;
+    transform: rotate(-2deg) skew(-4deg);
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.3);
+}
+
+p a {
+    color: teal;
+    font-weight: normal;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

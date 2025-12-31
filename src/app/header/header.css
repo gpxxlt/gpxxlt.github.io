@@ -1,0 +1,66 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(159, 159, 159, 0.1);
+    backdrop-filter: blur(20px);            /* Blur everything behind */
+    -webkit-backdrop-filter: blur(20px);    /* Safari support */
+}
+
+.header-view {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+
+.header-name {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-navigation {
+    display: none;
+}
+
+/* Medium screens and up (768px+) */
+@media (min-width: 768px) {
+    .header-navigation {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+.header h1 {
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+}
+
+.portfolio-text {
+    font-weight: 300;
+    font-size: 16px;
+    color: #383838;
+}
+
+.header-link {
+    font-weight: 300;
+    font-size: 18px;
+    color: #505050;
+}
+
+.header-link:hover {
+    font-weight: 400;
+    text-shadow: 1px 1px 1px;
+}
+
+.header-link-separator {
+    font-weight: 300;
+    font-size: 20px;
+}

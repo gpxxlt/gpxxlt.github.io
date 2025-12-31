@@ -1,5 +1,10 @@
 .hero-section {
     display: flex;
+    padding: 10rem 20rem;
+    /* Added for heading */
+    margin-top: 4rem;
+    width: 100vw;
+    height: 100vh;
 }
 
 .hero-section-text {
@@ -9,29 +14,40 @@
     border: 2px solid #000;
 }
 
-.hero-section-avatar {
-    width: 20%;
-    height: auto;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #000;
-}
-
-.hero-section-avatar-image {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    border-radius: 50%;  /* This creates the circle */
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid #000;
-}
-
 .hero-section h1 {
-    font-weight: normal;
-    font-size: 40px;
+    font-weight: 300;
+    font-size: 48px;
+    color: #111827;
+    margin-bottom: 1rem;
 }
+
+.hero-section h2 {
+    font-weight: 400;
+    font-size: 20px;
+    color: #4b5563;
+    margin-bottom: 3rem;
+}
+
+.hero-section h3 {
+    font-weight: 300;
+    font-size: 16px;
+    color: #000000;
+    margin-top: 6rem;
+}
+
+/* Box shadow: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-shadow */
+/* Neon effects (to be added): https://css-tricks.com/how-to-create-neon-text-with-css/ */
+.hero-section-button {
+    font-weight: 300;
+    font-size: 20px;
+    color: black;
+    background: rgb(80, 80, 80, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    pointer-events: none;
+
+    /* Neon effects */
+    /*outline: 2px teal solid;*/
+    /*box-shadow: rgba(255, 68, 68, 0.52) 0px 3px 10px;*/
+}
+

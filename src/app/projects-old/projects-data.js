@@ -8,17 +8,19 @@ export const projectData = [
         id: 0,
         title: 'Google Maps Integration',
         brief: 'One liner to describe this project',
-        description: 'In-depth description for project 1',
+        description: `
+            This project ... TEDx. (Ok, we really need to have a hyperlink for each section)
+        `,
         image: '/proj-images/proj0.jpeg',
         tags: [
             {
                 id: 0,
-                name: '#maps',
+                name: '#googlemaps-api',
                 description: 'This uses some sort of API',
             },
             {
                 id: 1,
-                name: '#real-time',
+                name: '#nextjs',
                 description: 'This is a real time application',
             },
             {
@@ -34,24 +36,29 @@ export const projectData = [
     },
     {
         id: 1,
-        title: 'Project 2',
+        title: 'Bidirectional Path Tracer',
         brief: 'One liner to describe this project',
-        description: 'In-depth description for project 1',
+        description:`
+            The final project for CMU CS468: Physics Based Rendering. 
+            In this project I implemented a bidirectional path tracer (BDPT) from scratch in a basic renderer, DIRT.
+            This unbiased path tracer is useful in scenes that lack direct illumination and also caustic effects.
+            See more details in the attached report.
+        `,
         image: '/proj-images/proj0.jpeg',
         tags: [
             {
                 id: 0,
-                name: '#maps',
+                name: '#computer-graphics',
                 description: 'This uses some sort of API',
             },
             {
                 id: 1,
-                name: '#real-time',
+                name: '#C++',
                 description: 'This is a real time application',
             },
             {
                 id: 2,
-                name: '#collaboration',
+                name: '#individual',
                 description: 'This is a collaboration project',
             }
         ],
@@ -60,4 +67,14 @@ export const projectData = [
         github: true,
         github_url: '',
     },
+    // {
+    //     id: 2,
+    //     title: 'Bidirectional Path Tracer',
+    //     brief: 'One liner to describe this project',
+    //     description: 'In-depth description for project 1',
+    //     image: '/proj-images/proj0.jpeg',
+    //     tags: [
+    //
+    //     ]
+    // }
 ]

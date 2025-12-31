@@ -1,0 +1,37 @@
+/* A group of skills */
+.skill-set {
+    display: block;
+}
+
+.skill-set-title {
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.skill-set-list {
+    display: block;
+    text-align: right;
+    /*border: 2px solid #000;*/
+}
+
+/* A single skill with icon and name */
+.skill-card {
+    display: inline-block;
+    margin-right: 20px;
+    /*padding: 10px; !* Increase inner area *!*/
+    /*margin: 10px;  !* Increase outer area *!*/
+    /*border: 2px solid #1a9338;*/
+}
+
+.skill-icon {
+    width: 100px;
+    padding: 5px;
+}
+
+.skill-name {
+    font-size: 18px;
+    font-weight: 200;
+    text-align: left;
+    padding: 5px;
+}
+

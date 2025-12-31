@@ -1,21 +1,58 @@
 .section {
-    background: #fff;
-    border-radius: 0.5rem;
-    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0);
+    margin-bottom: 2rem;
     /* Temporary, remove when done */
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    /*box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);*/
 }
 
-.section h2 {
-    font-weight: normal;
+.section-title {
+    font-weight: 200;
     font-size: 30px;
     margin-bottom: 10px;
     margin-left: 8px;
 }
 
 /* Defines the background image, credits: https://heropatterns.com/ */
+/* Another good place for background https://app.haikei.app/ */
 /* Also can checkout different color gradients: https://uigradients.com/#Sunset */
-body {
-    background-image: url('architect.svg');
-    background-repeat: repeat;
+/*body {*/
+/*    background-image: url('architect.svg');*/
+/*    background-repeat: repeat;*/
+/*}*/
+
+.screen {
+    min-height: 100vh;
+    z-index: -999;
 }
+
+.main {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem 1rem;
+}
+
+/* Small screens and up (640px+) */
+@media (min-width: 640px) {
+    .main {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+/* Large screens and up (1024px+) */
+@media (min-width: 1024px) {
+    .main {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: 62% 1fr;
+    gap: 2rem;
+}
+
