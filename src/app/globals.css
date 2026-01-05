@@ -162,24 +162,24 @@
 
 
 /*https://hype4.academy/tools/glassmorphism-generator*/
-.project-card {
-    /*width: 240px;*/
-    height: 360px;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+.glass-card {
+    background: rgba(145, 145, 145, 0.1);
+    /* Blur effect is only effective for a colored background */
+    /*backdrop-filter: blur(15px);*/
+    /*-webkit-backdrop-filter: blur(15px);*/
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow:
             0 8px 32px rgba(0, 0, 0, 0.1),
             inset 0 1px 0 rgba(255, 255, 255, 0.5),
             inset 0 -1px 0 rgba(255, 255, 255, 0.1),
-            inset 0 0 20px 10px rgba(255, 255, 255, 1);
+            inset 0 0 40px 20px rgba(255, 255, 255, 0);
     position: relative;
     overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.project-card::before {
+.glass-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -189,12 +189,12 @@
     background: linear-gradient(
             90deg,
             transparent,
-            rgba(255, 255, 255, 0.8),
+            rgba(124, 145, 142, 0.5),
             transparent
     );
 }
 
-.project-card::after {
+.glass-card::after {
     content: '';
     position: absolute;
     top: 0;
@@ -209,14 +209,70 @@
     );
 }
 
+.glass-card:hover {
+    transform: translateY(2px);
+    box-shadow:
+        0 4px 6px rgba(0, 0, 0, 0.07),
+        0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+
 /* https://patterncraft.fun/ */
 .geometric-background {
+    min-height: 100vh; /* Prevents background scrolls when inner component scrolls */
+    inset: 0;
+    z-index: -2;
     background-image:
-        repeating-linear-gradient(0deg, transparent, transparent 5px, rgba(75, 85, 99, 0.06) 5px, rgba(75, 85, 99, 0.06) 6px, transparent 6px, transparent 15px),
-        repeating-linear-gradient(90deg, transparent, transparent 5px, rgba(75, 85, 99, 0.06) 5px, rgba(75, 85, 99, 0.06) 6px, transparent 6px, transparent 15px),
+        repeating-linear-gradient(0deg, transparent, transparent 50px, rgba(75, 85, 99, 0.06) 5px, rgba(75, 85, 99, 0.06) 6px, transparent 6px, transparent 15px),
+        repeating-linear-gradient(90deg, transparent, transparent 50px, rgba(75, 85, 99, 0.06) 5px, rgba(75, 85, 99, 0.06) 6px, transparent 6px, transparent 15px),
         repeating-linear-gradient(0deg, transparent, transparent 10px, rgba(107, 114, 128, 0.04) 10px, rgba(107, 114, 128, 0.04) 11px, transparent 11px, transparent 30px),
-        repeating-linear-gradient(90deg, transparent, transparent 10px, rgba(107, 114, 128, 0.04) 10px, rgba(107, 114, 128, 0.04) 11px, transparent 11px, transparent 30px)
+        repeating-linear-gradient(90deg, transparent, transparent 10px, rgba(107, 114, 128, 0.04) 10px, rgba(107, 114, 128, 0.04) 11px, transparent 11px, transparent 30px);
+    pointer-events: none;
+    position: absolute;
 }
+
+.bg-container {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background: white;
+}
+
+.teal-glow-bg {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image:
+        radial-gradient(
+            circle at top center,
+            rgba(124, 145, 142, 0.5),
+            transparent 70%
+        );
+    background-repeat: no-repeat;
+    filter: blur(80px);
+}
+
+
+/*!* Dark theme, looks good *!*/
+/*.striped-dark-container {*/
+/*    min-height: 100vh;*/
+/*    width: 100%;*/
+/*    background: black;*/
+/*    position: relative;*/
+/*}*/
+
+/*.striped-dark-bg {*/
+/*    position: absolute;*/
+/*    inset: 0;*/
+/*    z-index: -5;*/
+/*    background: repeating-linear-gradient(*/
+/*            45deg,*/
+/*            #000 0px,*/
+/*            #111 2px,*/
+/*            #000 4px,*/
+/*            #222 6px*/
+/*    );*/
+/*}*/
 
 
 .image-container {

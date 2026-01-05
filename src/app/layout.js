@@ -48,9 +48,12 @@ const poppins = localFont({
 export default function RootLayout({ children }) {
     return (
         <html lang="en" className={poppins.className}>
-              <body className="geometric-background">
-                    <Header/>
-                    {children}
+              <body className="bg-container">
+                  {/*<div className="striped-dark-bg" />*/}
+                  <div className="geometric-background" />
+                  <div className="radial-gradient-bg" />
+                  <Header/>
+                  {children}
               </body>
         </html>
     );

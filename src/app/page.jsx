@@ -12,32 +12,32 @@ export default function Home() {
             {/* Header and Hero Section */}
             <HeroSection/>
 
-            <main className="main">
-                <div className="content-container">
+            {/*<main className="main">*/}
+            {/*    <div className="content-container">*/}
 
-                    {/* Main Content */}
-                    <div>
-                        <div className="section">
-                            <h2 className="section-title">Personal Projects</h2>
-                            <ProjectSection/>
-                        </div>
+            {/*        /!* Main Content *!/*/}
+            {/*        <div>*/}
+            {/*            <div className="section">*/}
+            {/*                <h2 className="section-title">Personal Projects</h2>*/}
+            {/*                <ProjectSection/>*/}
+            {/*            </div>*/}
 
-                        <div className="section">
-                            <h2 className="section-title">Professional Experience</h2>
-                        </div>
+            {/*            <div className="section">*/}
+            {/*                <h2 className="section-title">Professional Experience</h2>*/}
+            {/*            </div>*/}
 
-                        <div className="section">
-                            <h2 className="section-title">Skills</h2>
-                            <SkillsSection />
-                        </div>
-                    </div>
+            {/*            <div className="section">*/}
+            {/*                <h2 className="section-title">Skills</h2>*/}
+            {/*                <SkillsSection />*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
 
-                    {/* Sidebar */}
-                    <div>
-                        <Sidebar/>
-                    </div>
-                </div>
-            </main>
+            {/*        /!* Sidebar *!/*/}
+            {/*        <div>*/}
+            {/*            <Sidebar/>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</main>*/}
         </div>
     );
 }

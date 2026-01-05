@@ -1,10 +1,9 @@
 export const heroSectionData = {
     title: "Welcome to My Digital Garden",
-    brief: `I am a rising senior at Carnegie Mellon University majoring in Computer Science with a minor in Statistics. 
-            Proficient in Python, C/C++, C#, and R. 
-            Experienced in game development, statistical analysis, and web development. 
-            Known for adaptability and problem-solving skills. 
-            Seeking an internship in Information Technology.`,
+    brief: `
+        I'm a senior Computer Science student at Carnegie Mellon University focused on building next-generation software experiences. 
+        I combine expertise in full-stack development and testing automation with a passion for AI integration and agency. 
+        Currently seeking full-time and part-time opportunities in software engineering.`,
     // avatar: '/proj-images/avatar.png',
     linkedIn: "https://www.linkedin.com/in/gyp15213/",
     github: "https://github.com/gpxxlt"

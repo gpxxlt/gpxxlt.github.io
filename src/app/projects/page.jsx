@@ -11,12 +11,12 @@ import {
 import { FaExternalLinkAlt, FaLink } from "react-icons/fa";
 import {projectsData} from './project-data';
 import "../globals.css";
-
+import "./projects.css";
 
 
 function Description({ data, skills }) {
     return (
-        <div className="sticky-note">
+        <div className="glass-card flip-in-hor-bottom">
             <div className="m-6">
                 {/* Project title */}
                 <div className="flex gap-x-3 items-center">
@@ -42,7 +42,7 @@ function Description({ data, skills }) {
             </div>
 
             {/* Tech Stacks */}
-            <div className="flex gap-x-5 self-end m-6 mt-auto">
+            <div className="flex gap-x-5 justify-self-end m-6">
                 {skills.map(skill => {
                     return (
                         <div key={skill.id} className="flex items-center gap-x-2">
@@ -58,28 +58,28 @@ function Description({ data, skills }) {
 }
 
 
-function TechStack({ data }) {
-    return (
-        <div className="flex flex-col gap-2 ml-10">
-            {data.map(skill => {
-                return (
-                    <div key={skill.id} className="flex items-center gap-x-2 w-10">
-                        <img src={skill.iconUrl} alt={skill.name}/>
-                        <p className="font-light text-xl">{skill.name}</p>
-                    </div>
-                )
-            })
-            }
-        </div>
-    )
-}
+// function TechStack({ data }) {
+//     return (
+//         <div className="flex flex-col gap-2 ml-10">
+//             {data.map(skill => {
+//                 return (
+//                     <div key={skill.id} className="flex items-center gap-x-2 w-10">
+//                         <img src={skill.iconUrl} alt={skill.name}/>
+//                         <p className="font-light text-xl">{skill.name}</p>
+//                     </div>
+//                 )
+//             })
+//             }
+//         </div>
+//     )
+// }
 
 
 // Carousel for displaying demo images
 function CarouselDemo({ demoData }) {
     return (
-        <div className="w-auto ml-auto">
-            <Carousel className="w-full max-w-lg">
+        <div>
+            <Carousel>
                 <CarouselContent>
                     {demoData.map(item => (
                         <CarouselItem key={item.id}>
@@ -103,23 +103,11 @@ function CarouselDemo({ demoData }) {
 }
 
 
-// function Demo({ demoData }) {
-//
-//     // name, url, subtitle
-//     return (
-//         <div className="flex flex-col items-center gap-y-5 w-2/5 border-black border-4 ml-auto">
-//             <img src={demoData.url} alt={demoData.name} className="w-full h-auto" />
-//             <p className="text-base font-light">{demoData.subtitle}</p>
-//         </div>
-//     )
-// }
-
-
 function ProjectItem({ projectData }) {
 
     return (
         // <div className="flex w-full border-black border-2">
-        <div className="flex w-full justify-between">
+        <div className="flex flex-col w-2/3 items-center">
             <Description data={projectData.description} skills={projectData.skills} />
             {/*<TechStack data={projectData.skills} />*/}
 
@@ -131,22 +119,6 @@ function ProjectItem({ projectData }) {
 
 
 export default function ProjectPage() {
-
-    const demoData = [
-        {
-            id: 0,
-            name: "Demo",
-            url: "/proj-images/demo.png",
-            subtitle: "Landing Page"
-        },
-        {
-            id: 1,
-            name: "Demo",
-            url: "/proj-images/demo.png",
-            subtitle: "This is a screenshot for ???"
-        },
-    ];
-
 
     return (
         <div>

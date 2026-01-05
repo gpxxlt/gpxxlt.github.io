@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedinIn, FaDownload } from "react-icons/fa";
 
 export default function HeroSection() {
     return (
-        <section className="hero-section">
+        <section className="hero-section text-focus-in">
             <div className="text-center">
 
                 {/* Text Contents */}
@@ -32,7 +32,7 @@ export default function HeroSection() {
                     </Link>
                 </div>
 
-                <h3>Scroll Down To View My Gallery</h3>
+                {/*<h3>Scroll Down To View My Gallery</h3>*/}
 
             </div>
         </section>
