@@ -1,318 +1,104 @@
-@import "tailwindcss";
-@import "tw-animate-css";
-/*---break---*/
-@custom-variant dark (&:is(.dark *));
-
-/*:root {*/
-/*  --background: #ffffff;*/
-/*  --foreground: #171717;*/
-/*}*/
-
-/*@theme inline {*/
-/*  --color-background: var(--background);*/
-/*  --color-foreground: var(--foreground);*/
-/*  --font-sans: var(--font-geist-sans);*/
-/*  --font-mono: var(--font-geist-mono);*/
-/*}*/
-
-/*@media (prefers-color-scheme: dark) {*/
-/*  :root {*/
-/*    --background: #0a0a0a;*/
-/*    --foreground: #ededed;*/
-/*  }*/
-/*}*/
-
-/*body {*/
-/*  background: var(--background);*/
-/*  color: var(--foreground);*/
-/*  font-family: Arial, Helvetica, sans-serif;*/
-/*}*/
-/*---break---*/
-@theme inline {
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-destructive: var(--destructive);
-  --color-border: var(--border);
-  --color-input: var(--input);
-  --color-ring: var(--ring);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
-}
-/*---break---*/
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
-}
-/*---break---*/
-.dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
-}
-/*---break---*/
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
+    /* Colour */
+    --frame: #090B10;
+    --backdrop: #0B0E13;
+    --ink: #F3E7DA;
+    --ink-soft: #EADCCD;
+    --ink-body: #E6DACD;
+    --muted: #C2B8AD;
+    --accent: #E3AE88;
+    --rule: rgba(243, 231, 218, 0.3);
+    --rule-soft: rgba(243, 231, 218, 0.16);
+
+    /* Type: the families loaded in layout.jsx */
+    --font-serif: var(--font-playfair), Georgia, "Times New Roman", serif;
+    --font-soft-serif: var(--font-fraunces), Georgia, "Times New Roman", serif;
+    --font-sans: var(--font-inter), "Helvetica Neue", Arial, sans-serif;
+    --font-mono: var(--font-jetbrains-mono), ui-monospace, Menlo, monospace;
+
+    /* Point each role at any of the families above */
+    --font-title: var(--font-serif);
+    --font-sub: var(--font-serif);
+    /* --font-body: var(--font-serif); */
+    --font-body: var(--font-fraunces);
+    --title-weight: 500;
+    --title-tracking: -0.01em;
+
+    /* Sizes: the base bucket; the media queries below override them per screen size */
+    --size-label: 12px;              /* uppercase labels, tags, captions */
+    --size-num: 12px;                /* pane numbers 02–05 */
+    --size-num-about: 13px;          /* About's 01 */
+    --size-list: 16px;               /* list rows, bylines, links, About details */
+    --size-body: 17px;               /* running text */
+    --size-pane-title: 52px;
+    --size-pane-title-about: 88px;
+    --size-row: 26px;                /* rows in an "All …" window */
+    --size-subhead: 28px;            /* subheadings in an essay */
+    --size-quote: 26px;              /* pull quotes */
+    --size-heading-max: 60px;        /* window headings grow with the viewport up to this */
+    --size-list-title-max: 72px;
+    --window-width: 780px;
+
+    /* Motion */
+    --ease: cubic-bezier(.2, .7, .2, 1);
+    --frost: 10px;
 }
 
-/* Add a concrete-textured background */
-/*.custom-body {*/
-/*    background-image: url("../../public/proj-images/stone-wall-texture.jpg");*/
-/*    background-position: top left;*/
-/*    background-attachment: fixed;*/
-/*    background-size: cover;*/
-/*}*/
-
-/*.custom-body::after {*/
-/*    content: '';*/
-/*    position: fixed;*/
-/*    inset: 0;*/
-/*    background: rgba(0, 0, 0, 0.1);  !* Very subtle darkening *!*/
-/*    pointer-events: none;*/
-/*}*/
-
-
-/*https://hype4.academy/tools/glassmorphism-generator*/
-.glass-card {
-    background: rgba(145, 145, 145, 0.1);
-    /* Blur effect is only effective for a colored background */
-    /*backdrop-filter: blur(15px);*/
-    /*-webkit-backdrop-filter: blur(15px);*/
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow:
-            0 8px 32px rgba(0, 0, 0, 0.1),
-            inset 0 1px 0 rgba(255, 255, 255, 0.5),
-            inset 0 -1px 0 rgba(255, 255, 255, 0.1),
-            inset 0 0 40px 20px rgba(255, 255, 255, 0);
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.2s, box-shadow 0.2s;
+/* Large screens: 1920px and up (about 20" and larger) */
+@media (min-width: 1920px) {
+    :root {
+        --size-label: 14px;
+        --size-num: 14px;
+        --size-num-about: 16px;
+        --size-list: 19px;
+        --size-body: 20px;
+        --size-pane-title: 56px;
+        --size-pane-title-about: 92px;
+        --size-row: 29px;
+        --size-subhead: 31px;
+        --size-quote: 29px;
+        --size-heading-max: 64px;
+        --size-list-title-max: 76px;
+        --window-width: 880px;       /* widened to keep line lengths the same at the larger size */
+    }
 }
 
-.glass-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(
-            90deg,
-            transparent,
-            rgba(124, 145, 142, 0.5),
-            transparent
-    );
+/* Phones: one column of panes */
+@media (max-width: 720px) {
+    :root {
+        --size-pane-title: 36px;
+        --size-pane-title-about: 52px;
+    }
 }
 
-.glass-card::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1px;
-    height: 100%;
-    background: linear-gradient(
-            180deg,
-            rgba(255, 255, 255, 0.8),
-            transparent,
-            rgba(255, 255, 255, 0.3)
-    );
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-.glass-card:hover {
-    transform: translateY(2px);
-    box-shadow:
-        0 4px 6px rgba(0, 0, 0, 0.07),
-        0 20px 60px rgba(0, 0, 0, 0.15);
+html,
+body {
+    margin: 0;
+    background: var(--frame);
+    color: var(--ink);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
 }
 
-
-/* https://patterncraft.fun/ */
-.geometric-background {
-    min-height: 100vh; /* Prevents background scrolls when inner component scrolls */
-    inset: 0;
-    z-index: -2;
-    background-image:
-        repeating-linear-gradient(0deg, transparent, transparent 50px, rgba(75, 85, 99, 0.06) 5px, rgba(75, 85, 99, 0.06) 6px, transparent 6px, transparent 15px),
-        repeating-linear-gradient(90deg, transparent, transparent 50px, rgba(75, 85, 99, 0.06) 5px, rgba(75, 85, 99, 0.06) 6px, transparent 6px, transparent 15px),
-        repeating-linear-gradient(0deg, transparent, transparent 10px, rgba(107, 114, 128, 0.04) 10px, rgba(107, 114, 128, 0.04) 11px, transparent 11px, transparent 30px),
-        repeating-linear-gradient(90deg, transparent, transparent 10px, rgba(107, 114, 128, 0.04) 10px, rgba(107, 114, 128, 0.04) 11px, transparent 11px, transparent 30px);
-    pointer-events: none;
-    position: absolute;
+a {
+    color: var(--ink);
 }
 
-.bg-container {
-    min-height: 100vh;
-    width: 100%;
-    position: relative;
-    background: white;
+a:hover {
+    color: #FFFFFF;
 }
 
-.teal-glow-bg {
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    background-image:
-        radial-gradient(
-            circle at top center,
-            rgba(124, 145, 142, 0.5),
-            transparent 70%
-        );
-    background-repeat: no-repeat;
-    filter: blur(80px);
+button {
+    font: inherit;
 }
 
-
-/*!* Dark theme, looks good *!*/
-/*.striped-dark-container {*/
-/*    min-height: 100vh;*/
-/*    width: 100%;*/
-/*    background: black;*/
-/*    position: relative;*/
-/*}*/
-
-/*.striped-dark-bg {*/
-/*    position: absolute;*/
-/*    inset: 0;*/
-/*    z-index: -5;*/
-/*    background: repeating-linear-gradient(*/
-/*            45deg,*/
-/*            #000 0px,*/
-/*            #111 2px,*/
-/*            #000 4px,*/
-/*            #222 6px*/
-/*    );*/
-/*}*/
-
-
-.image-container {
-    width: 100%;;
-    /*height: auto;*/
-    aspect-ratio: 16/9;
-    border-radius: 2px;
-    box-shadow:
-        rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-}
-
-/* This whole thing is best when we have a fixed height for each project */
-/*https://www.youtube.com/watch?v=8XGhiyjaXYY*/
-.sticky-note {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    background: whitesmoke;
-    width: 50%;
-}
-
-.sticky-note::before {
-    content: '';
-    position: absolute;
-    bottom: 15px;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-
-    left: 15px;
-    transform: rotate(-2deg) skew(-4deg);
-    box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.3);
-}
-
-p a {
-    color: teal;
-    font-weight: normal;
-}
-
-p a:hover {
-    text-decoration: underline;
+:focus-visible {
+    outline: 1px solid var(--ink);
+    outline-offset: 3px;
 }
